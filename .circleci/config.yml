@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh root@192.168.5.190 "touch a"
+            ssh ec2-user@54.169.205.222 "touch a"
 
 #workflows:
 #  version: 2
