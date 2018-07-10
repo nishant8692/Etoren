@@ -1,9 +1,0 @@
-deployment:
-nishant:
-branch: master
-commands:
-- /root/deploy_prod.sh
-
-test:
-override:
-- echo 'no tests, just say us Okay!'
