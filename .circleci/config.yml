@@ -8,7 +8,7 @@
 #      - run: echo "A first hello"
 version: 2
 jobs:
-#  build:
+  build:
     #...
 #  deploy:
 #    machine:
