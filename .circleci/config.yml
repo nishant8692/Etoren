@@ -11,7 +11,7 @@ jobs:
   build:
     #...
   deploy:
-    machine:
+    machine: true
 #      enabled: true
     steps:
       - run:
