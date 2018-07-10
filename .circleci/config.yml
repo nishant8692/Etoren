@@ -9,6 +9,7 @@
 version: 2
 jobs:
   build:
+    machine: true
     #...
   deploy:
     machine: true
