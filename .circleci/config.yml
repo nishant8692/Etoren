@@ -8,17 +8,21 @@
 #      - run: echo "A first hello"
 version: 2
 jobs:
-  build:
+#  build:
     #...
-  deploy:
-    machine:
-      enabled: true
+#  deploy:
+#    machine:
+#      enabled: true
+#    steps:
+#      - run:
+#          name: Deploy Over SSH
+#          command: |
+#            ssh ec2-user@54.169.205.222 "touch a"
+  deploy-job:
     steps:
-      - run:
-          name: Deploy Over SSH
-          command: |
-            ssh ec2-user@54.169.205.222 "touch a"
-
+      - add_ssh_keys:
+          fingerprints:
+            - "85:06:45:6c:d1:ee:71:fe:c0:7c:51:5b:ff:a2:34:9f"
 #workflows:
 #  version: 2
 #  build-and-deploy:
