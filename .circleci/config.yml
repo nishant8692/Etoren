@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh ec2-user@54.169.205.222 "touch c"
+            ssh ec2-user@13.229.109.84 "mkdir nishant && cd nishant && touch abc"
 #  deploy-job:
 #     machine:
 #    steps:
