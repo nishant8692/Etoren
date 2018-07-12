@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh ec2-user@13.229.109.84 "mkdir nishant && cd nishant && touch abc"
+            ssh ec2-user@54.169.85.253 "sudo su - && cd /root/Etoren/ && git pull git@github.com:nishant8692/Etoren.git"
 #  deploy-job:
 #     machine:
 #    steps:
