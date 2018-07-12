@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh ec2-user@54.169.85.253 "sudo su - && cd /root/Etoren/ && git pull git@github.com:nishant8692/Etoren.git"
+            ssh ec2-user@54.169.85.253 "cd Etoren && sudo git pull git@github.com:nishant8692/Etoren.git"
 #  deploy-job:
 #     machine:
 #    steps:
